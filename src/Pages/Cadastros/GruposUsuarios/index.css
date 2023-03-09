@@ -1,0 +1,162 @@
+.gruposUsuarios{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+}
+
+/* PARTE DA PESQUISA */
+.gruposUsuarios .inputsDiv{
+    display: flex;
+    min-height: 7rem;
+    max-height: 20rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #F8F8F8;
+    align-items: center;
+    border-radius: 7px;
+    margin-top: 2rem;
+    padding: 1rem 10.7rem;
+    border: solid 2px #D4E1EB;
+    max-width: 65rem;
+}
+.gruposUsuarios .inputsDiv div{
+    display: flex;
+    flex-direction: column;
+}
+.gruposUsuarios .inputsDiv label{
+    padding-bottom: 0.5rem;
+    font-size: 14px;
+}
+.gruposUsuarios .inputsDiv .inputCad{
+    margin-right: 1rem;
+    border: solid 1px #D4E1EB;
+    padding: 0.2rem 0;
+    width: 15rem;
+    border-radius: 5px;
+    padding-left: 0.2rem;
+}
+.gruposUsuarios .inputsDiv .divRadio{
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    margin-top: 1.2rem;
+}
+.gruposUsuarios .inputsDiv .divRadio label{
+    margin-top: 0.5rem;
+}
+.gruposUsuarios .inputsDiv .divRadio input{
+    margin: 0 0.5rem;
+    display: flex;
+    flex-direction: row;
+}
+.gruposUsuarios .icon{
+    width: 25px;
+    height: 25px;
+    color:  #005187;
+    margin-top: 0.4rem;
+    margin-left: 1.5rem;
+    cursor: pointer;
+}
+.gruposUsuarios .inputCad:focus, .inputCad:focus, .inputCad:focus {
+    box-shadow: 0 0 0 0;
+    border: solid 1px #D4E1EB;
+    outline: 0;
+} 
+
+
+/* PARTE DA TABELA */
+.gruposUsuarios .tabela h2{
+    margin-top: 1rem;
+    color: #005187;
+    margin-bottom: 0.5rem;
+}
+.gruposUsuarios .tabela table{
+    border: 0;
+    border-collapse:collapse;
+    border-radius: 50%;
+    max-width: 65rem;
+}
+/* //// */
+.gruposUsuarios .tabela table th{
+    line-height: 30px;
+}
+.gruposUsuarios .tabela tr:nth-child(1){
+    width: 20rem;
+    background-color: #D4E1EB;
+}
+.gruposUsuarios .tabela th:nth-child(1) {
+    width: 30rem;
+}
+.gruposUsuarios .tabela th:nth-child(2){
+    width: 15rem;
+}
+.gruposUsuarios .tabela th:nth-child(3){
+    width: 15rem;
+}
+.gruposUsuarios .tabela tr:nth-child(1) th:nth-child(1){
+    border-top-left-radius: 7px;
+}
+.gruposUsuarios .tabela tr:nth-child(1) th:nth-child(3){
+    border-top-right-radius: 7px;
+}
+.gruposUsuarios .tabela table td{
+    text-align: left;
+    line-height: 30px;
+}
+.gruposUsuarios .tabela td:nth-child(1) {
+    padding-left: 0.5rem;
+}
+.gruposUsuarios tr:nth-child(2n+2) {
+    background: #F2f2f2;
+    border-bottom: solid 1px #D4E1EB;
+    border-top: solid 1px #D4E1EB;;
+}
+.gruposUsuarios .imgTd {
+    margin-top: 0.2rem;
+    padding: 0 4rem;
+    display: flex;
+    justify-content: space-around;
+}
+.gruposUsuarios .imgTd img{
+    width: 1rem;
+    cursor: pointer;
+}
+
+@media (max-width: 767px){
+    .gruposUsuarios .tabela table th{
+        font-size: 10px;
+    }
+    .gruposUsuarios .tabela table td{
+        font-size: 10px;
+    }
+    .gruposUsuarios .inputsDiv{
+        padding: 1rem 2rem;
+    }
+    .gruposUsuarios .inputsDiv .divRadio{
+        padding: 0.2rem;
+    }
+    .gruposUsuarios .imgTd {
+        padding: 0rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px){
+    .gruposUsuarios .tabela table th{
+        font-size: 14px;
+    }
+    .gruposUsuarios .tabela table td{
+        font-size: 14px;
+    }
+    .gruposUsuarios .inputsDiv{
+        padding: 1rem 7rem;
+    }
+    .gruposUsuarios .inputsDiv .divRadio{
+        padding: 0.2rem;
+    }
+    .gruposUsuarios .imgTd {
+        padding: 0rem;
+    }
+}

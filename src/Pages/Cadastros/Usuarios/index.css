@@ -1,0 +1,135 @@
+.usuarios {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+}
+/* PARTE DA PESQUISA */
+.usuarios .inputsDiv{
+    display: flex;
+    min-height: 7rem;
+    max-height: 20rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #F8F8F8;
+    align-items: center;
+    border-radius: 7px;
+    margin-top: 2rem;
+    padding: 4rem 5rem;
+    border: solid 2px #D4E1EB;
+    max-width: 65rem;
+}
+.usuarios .inputsDiv div{
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem 0;
+}
+.usuarios .inputsDiv label{
+    padding-bottom: 0.5rem;
+    font-size: 14px;
+}
+.usuarios .inputsDiv .inputCad{
+    margin-right: 1rem;
+    border: solid 1px #D4E1EB;
+    padding: 0.2rem 0;
+    width: 15rem;
+    border-radius: 5px;
+    padding-left: 0.2rem;
+}
+.usuarios .inputsDiv select{
+    border-radius: 5px;
+}
+.usuarios .icon{
+    width: 25px;
+    height: 25px;
+    color:  #005187;
+    margin-top: 0.4rem;
+    margin-left: 1.5rem;
+    cursor: pointer;
+}
+.usuarios .inputCad:focus, .inputCad:focus, .inputCad:focus {
+    box-shadow: 0 0 0 0;
+    border: solid 1px #D4E1EB;
+    outline: 0;
+} 
+
+
+/* PARTE DA TABELA */
+.usuarios .tabela h2{
+    margin-top: 1rem;
+    color: #005187;
+    margin-bottom: 0.5rem;
+}
+.usuarios .tabela table{
+    border: 0;
+    border-collapse:collapse;
+    border-radius: 50%;
+    max-width: 65rem;
+}
+.usuarios .tabela table th{
+    line-height: 30px;
+}
+.usuarios .tabela tr:nth-child(1){
+    background-color: #D4E1EB;
+}
+.usuarios .tabela th:nth-child(1) {
+    width: 20rem;
+}
+.usuarios .tabela th:nth-child(2){
+    width: 25rem;
+}
+.usuarios .tabela th:nth-child(3){
+    width: 15rem;
+}
+.usuarios .tabela th:nth-child(4){
+    width: 7rem;
+}
+.usuarios .tabela th:nth-child(5){
+    width: 10rem;
+}
+.usuarios .tabela tr:nth-child(1) th:nth-child(1){
+    border-top-left-radius: 7px;
+}
+.usuarios .tabela tr:nth-child(1) th:nth-child(5){
+    border-top-right-radius: 7px;
+}
+.usuarios .tabela table td{
+    text-align: left;
+    line-height: 30px;
+}
+.usuarios .tabela td:nth-child(1) {
+    padding-left: 0.5rem;
+}
+.usuarios tr:nth-child(2n+2) {
+    background: #F2f2f2;
+    border-bottom: solid 1px #D4E1EB;
+    border-top: solid 1px #D4E1EB;;
+}
+.usuarios .imgTd {
+    margin-top: 0.2rem;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: space-around;
+}
+.usuarios .imgTd img{
+    width: 1rem;
+    cursor: pointer;
+}
+
+@media (max-width: 767px){
+    .usuarios .tabela table th{
+        font-size: 10px;
+    }
+    .usuarios .tabela table td{
+        font-size: 10px;
+    }
+    .usuarios .inputsDiv{
+        padding: 1rem 2rem;
+    }
+    .usuarios .inputsDiv div{
+        padding: 0.5rem 0;
+    }
+}
+

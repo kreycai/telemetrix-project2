@@ -1,0 +1,74 @@
+FaSistrix{
+    width: 25px;
+    height: 25px;
+    color:  #005187;
+}
+
+FaRegPlusSquare{
+    width: 25px;
+    height: 25px;
+    color:  #005187;
+}
+
+#check{
+    display: none;
+}
+.cadastros {
+    display: flex;
+    padding: 0 1rem;
+    flex-direction: row;
+}
+.cadastros label{
+    position: absolute;
+    cursor: pointer;
+    padding: 15px;
+    z-index: 1;
+    height: 3rem;
+    border-bottom: solid 1px #D4E1EB;
+}
+
+.cadastros img.logo{
+    width: 100%;
+}
+
+.bar{
+    position: relative;
+    background-color: #fff;
+    height: 100vh;
+    width: 200px;
+    transition: all 0.2s linear;
+    left: -300px;
+    border-right: solid #D4E1EB 1px;
+}
+.bar nav{
+    width: 100%;
+    top: 65px;
+}
+.bar img{
+    padding: 0.3rem;
+
+}
+.bar a{
+    text-decoration: none;
+
+}
+
+.bar .link{
+    background-color: #F8F8F8;
+    padding: 0.5rem;
+    font-size: 12pt;
+    transition: all 0.2s linear;
+    color: #005187;
+}
+
+.link:hover{
+    background-color: #050542;
+}
+
+#check:checked ~ .bar{
+    display: block;
+    transform: translateX(300px);
+}
+#check:checked ~ label{
+    position: relative;
+}
